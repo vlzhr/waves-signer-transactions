@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { TxFormWrapper } from '../TxFormWrapper/TxFormWrapper';
 
 const TEXTAREA_PLACEHOLDER = 'Use a comma to separate recipient and the amount to send. Use\n' +
     'a new line for each recipient. \n' +
@@ -7,30 +8,29 @@ const TEXTAREA_PLACEHOLDER = 'Use a comma to separate recipient and the amount t
     'Alias2,Amount2'
 
 interface MassTransferFormProps {
-
+    handleLogout: () => void;
 }
 
-export const MassTransferForm: React.FC<MassTransferFormProps> = (props) => {
+export const MassTransferForm: React.FC<MassTransferFormProps> = ({ handleLogout }) => {
 
 
-    return <form className='ms-form'>
-        <h1 className='ms-form__header'>Mass Transfer</h1>
+    return <TxFormWrapper title={'Mass Transfer'} handleLogout={handleLogout} >
 
-        <div className='form-row'>
-            <label className='form-label'>Select Asset</label>
-            <input className='form-asset-input' type='text' placeholder='Type asset name'/>
+        <div className='form__row'>
+            <label className='form__label'>Select Asset</label>
+            <input className='form__asset-input' type='text' placeholder='Type asset name'/>
         </div>
 
-        <div>
-            <div>
-                <label>Recipients, Amounts: 0/100</label>
-                <span>Import CSV File</span>
+        <div className='form__row'>
+            <div className='space-between'>
+                <label className='form__label'>Recipients, Amounts: 0/100</label>
+                <span className='link'>Import CSV File</span>
             </div>
-            <textarea placeholder={TEXTAREA_PLACEHOLDER}/>
+            <textarea className='form__asset-input textarea' placeholder={TEXTAREA_PLACEHOLDER}/>
         </div>
 
         <div>
             {'error'}
         </div>
-    </form>
+    </TxFormWrapper>
 }

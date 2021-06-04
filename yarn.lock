@@ -1908,6 +1908,11 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@types/zen-observable@^0.8.0":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.2.tgz#808c9fa7e4517274ed555fa158f2de4b4f468e71"
+  integrity sha512-HrCIVMLjE1MOozVoD86622S7aunluLb2PJdPfb3nYiEtohm8mIB/vyv0Fd37AdeMFrTUQXEunw78YloMA3Qilg==
+
 "@typescript-eslint/eslint-plugin@^4.5.0":
   version "4.15.2"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.15.2.tgz#981b26b4076c62a5a55873fbef3fe98f83360c61"
@@ -2033,6 +2038,23 @@
     tslib "^2.1.0"
     typed-ts-events "^1.2.1"
 
+"@waves.exchange/reactive@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@waves.exchange/reactive/-/reactive-0.0.1.tgz#cca780c60238eb2c8e431cabff24205498671188"
+  integrity sha512-wVsrck3F3xx6L5YiH0Tc+LHzXXFTZHNDd+1nJa+4LmSgTwyqS8/kLYr8Gj017dz422WAuRnhLQ4ku/yZkhp/4w==
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    zen-observable "^0.8.15"
+
+"@waves/balances@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@waves/balances/-/balances-0.0.1.tgz#fad15fd1b64c83fc1b31f3a634082d90a64c8a51"
+  integrity sha512-e8PNFv3lxZr6MITSdNbV7d0uuU+Gv8gaWhjdSIcWf2QQ4WamkzfJ1qv6MVkSQ/4qEz/HDEQl1eXJgMsDHxhrNg==
+  dependencies:
+    "@waves/bignumber" "^1.1.1"
+    "@waves/data-entities" "^2.0.6"
+    cross-fetch "^3.1.4"
+
 "@waves/bignumber@0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@waves/bignumber/-/bignumber-0.0.1.tgz#b878129008f1076f549aa29f274a499069916ccf"
@@ -2052,6 +2074,13 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@waves/client-logs/-/client-logs-1.0.0.tgz#52d021a330eab674475c50d42e616d3877e1a537"
   integrity sha512-Uf8NKJGw4lgmPTEFtqIuDD6GZkk73MZLyaFI1VWDDElXhsFY2uxdWhxFQYqK/8GNZBSycCTvDsi0RNDEqE1ivw==
+
+"@waves/data-entities@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@waves/data-entities/-/data-entities-2.0.6.tgz#d5620b3ef42d041f81b91d8680304a3f949c4812"
+  integrity sha512-LRqgGMcvzFwbPFdnHnWZx+RYMiXsfCxPJzsJEB0ZUGoHbhDXlc//VwTfIb5Qup5kGM1eeB4AfE6+geUQNNlc0w==
+  dependencies:
+    "@waves/bignumber" "^1.1.1"
 
 "@waves/node-api-js@^1.2.0":
   version "1.2.0"
@@ -3785,6 +3814,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     ripemd160 "^2.0.0"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+cross-fetch@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
+  integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
+  dependencies:
+    node-fetch "2.6.1"
 
 cross-spawn@7.0.3, cross-spawn@^7.0.0, cross-spawn@^7.0.2:
   version "7.0.3"
@@ -7768,7 +7804,7 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
-node-fetch@^2.6.1:
+node-fetch@2.6.1, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
@@ -12113,3 +12149,8 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zen-observable@^0.8.15:
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
+  integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==

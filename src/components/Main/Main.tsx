@@ -1,11 +1,13 @@
-import * as React from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { MassTransferForm } from '../MassTransferForm/MassTransferForm';
 import { LoginModal } from '../LoginModal/LoginModal';
 import { ProviderWeb } from '@waves.exchange/provider-web';
 import { ProviderCloud } from '@waves.exchange/provider-cloud';
 import { Signer } from '@waves/signer';
-import { useCallback, useContext, useState } from 'react';
 import { ConfigContext } from '../../context/ConfigContext';
+import { BigNumber } from '@waves/bignumber';
+import { useBalances } from './useBalances';
+import { Modal } from '../Modal/Modal';
 
 interface MainProps {
 
@@ -17,6 +19,11 @@ export const Main: React.FC<MainProps> = (props) => {
     const [userAddress, setUserAddress] = useState('');
     const [onSelectSigner, setOnSelectedSigner] = useState<boolean>();
     const [loginResults, setLoginResults] = useState<any>(null);
+    const [isModalOpen, setIsModalOpen] = useState(true);
+
+    const { userBalances } = useBalances(signer, userAddress);
+
+    console.log('%c userBalances', 'color: #e5b6ed', userBalances);
 
     const onLogin = useCallback(async (provider: typeof ProviderWeb | typeof ProviderCloud) => {
         setOnSelectedSigner(false);
@@ -35,9 +42,27 @@ export const Main: React.FC<MainProps> = (props) => {
         }
     }, [signer, loginResults]);
 
+    const logout = useCallback(async () => {
+        if (!signer) {
+            return;
+        }
+
+        try {
+            await signer.logout();
+            setUserAddress('');
+            setSigner(null);
+        } catch (e) {
+            return;
+        }
+    }, [signer]);
+
 
     return <div>
-        <MassTransferForm />
-        <LoginModal onSelect={onLogin}/>
+        <MassTransferForm handleLogout={logout} />
+        {isModalOpen && (
+            <Modal onClose={() => setIsModalOpen(false)}>
+                <LoginModal onSelect={onLogin} onClose={() => setIsModalOpen(false)}/>
+            </Modal>
+        )}
     </div>
 }
