@@ -2046,10 +2046,10 @@
     "@types/zen-observable" "^0.8.0"
     zen-observable "^0.8.15"
 
-"@waves/balances@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@waves/balances/-/balances-0.0.1.tgz#fad15fd1b64c83fc1b31f3a634082d90a64c8a51"
-  integrity sha512-e8PNFv3lxZr6MITSdNbV7d0uuU+Gv8gaWhjdSIcWf2QQ4WamkzfJ1qv6MVkSQ/4qEz/HDEQl1eXJgMsDHxhrNg==
+"@waves/balances@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@waves/balances/-/balances-0.0.2.tgz#e8f5690036d7cb995289d05a4b7e534e77bf1938"
+  integrity sha512-odWwYEdEpFG8P0ljfg5xEg1OqsOIzgwblkc5fuwhj27ELJgzGK94J0oC3SPXRE0dCS+Z7uWPexZksHOdeOxv+A==
   dependencies:
     "@waves/bignumber" "^1.1.1"
     "@waves/data-entities" "^2.0.6"
@@ -8304,6 +8304,11 @@ pako@~1.0.5:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
   integrity sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==
+
+papaparse@^5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.3.1.tgz#770b7a9124d821d4b2132132b7bd7dce7194b5b1"
+  integrity sha512-Dbt2yjLJrCwH2sRqKFFJaN5XgIASO9YOFeFP8rIBRG2Ain8mqk5r1M6DkfvqEVozVcz3r3HaUGw253hA1nLIcA==
 
 parallel-transform@^1.1.0:
   version "1.2.0"

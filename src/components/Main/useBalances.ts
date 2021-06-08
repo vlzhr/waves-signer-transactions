@@ -1,16 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Signer } from '@waves/signer';
 import { MyMoney } from '@waves/balances/src/utils';
 import { Balance } from '@waves/balances';
 
 export const useBalances = (signer: Signer|null|undefined, userAddress: string) => {
-    const [userBalances, setUserBalances] = useState< Record<string, MyMoney>>({});
+    const [userBalances, setUserBalances] = useState<Record<string, MyMoney>>({});
 
-    const balance = new Balance({ address: userAddress, updateBalancesMs: 5000 });
+    useEffect(() => {
+        if (userAddress) {
+            const balance = new Balance({ address: userAddress, updateBalancesMs: 5000 });
 
-    balance.onUpdate((balances) => {
-       setUserBalances(balances);
-    });
+            balance.onUpdate((balances) => {
+                console.log('%c balances', 'color: #e5b6ed', balances);
+                setUserBalances(balances);
+            });
+        }
+    }, [userAddress]);
+
 
     // const fetchUserBalances = async (currentSigner: Signer): Promise<Record<string, Balance>> => {
     //     const balances = await currentSigner.getBalance();

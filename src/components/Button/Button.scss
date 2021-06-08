@@ -9,8 +9,12 @@
     border: solid 1px #5a81ea;
     background-color: transparent;
     color: #5a81ea;
+    cursor: pointer;
     &.btn_primary {
         color: #fff;
         background-color: #5a81ea;
+    }
+    &.big {
+        width: 100%;
     }
 }

@@ -35,6 +35,7 @@ export const Main: React.FC<MainProps> = (props) => {
             const user = await currentSigner.login();
             setUserAddress(user.address);
             loginResults && loginResults.res({ ...user, signer: currentSigner });
+            setIsModalOpen(false)
             return user;
         } catch (e) {
             loginResults && loginResults.rej();
@@ -43,6 +44,7 @@ export const Main: React.FC<MainProps> = (props) => {
     }, [signer, loginResults]);
 
     const logout = useCallback(async () => {
+        setIsModalOpen(true);
         if (!signer) {
             return;
         }
@@ -58,7 +60,7 @@ export const Main: React.FC<MainProps> = (props) => {
 
 
     return <div>
-        <MassTransferForm handleLogout={logout} />
+        <MassTransferForm handleLogout={logout} balances={userBalances} signer={signer}/>
         {isModalOpen && (
             <Modal onClose={() => setIsModalOpen(false)}>
                 <LoginModal onSelect={onLogin} onClose={() => setIsModalOpen(false)}/>
