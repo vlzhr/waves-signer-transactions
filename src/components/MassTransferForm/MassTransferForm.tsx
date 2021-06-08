@@ -3,7 +3,6 @@ import { TxFormWrapper } from '../TxFormWrapper/TxFormWrapper';
 import { SearchAsset } from '../SearchAsset/SearchAsset';
 import { MyMoney } from '@waves/balances/src/utils';
 import { Signer } from '@waves/signer';
-import { Base58Bytes, MassTransferItem } from '@waves/ts-types/src/index';
 import { useParseTransfers } from './useParseTransfers';
 
 export interface ITransferItem {
@@ -29,7 +28,7 @@ export const MassTransferForm: React.FC<MassTransferFormProps> = ({ handleLogout
 
     const handleChange = React.useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {
         e.preventDefault();
-        console.log('%c e', 'color: #e5b6ed', e.target.value);
+
         setInputValue(e.target.value);
     }, [balances]);
 
@@ -46,8 +45,6 @@ export const MassTransferForm: React.FC<MassTransferFormProps> = ({ handleLogout
     }, [selectedAsset]);
 
     const transfers = useParseTransfers(inputValue, selectedAsset);
-
-    console.log('%c transfers', 'color: #e5b6ed', transfers);
 
     return <TxFormWrapper title={'Mass Transfer'} handleLogout={handleLogout} onConfirm={handleConfirm} confirmText='Transfer'>
 

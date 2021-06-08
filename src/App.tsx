@@ -4,7 +4,8 @@ import { Main } from './components/Main/Main';
 import { ConfigContextProvider, ConfigContextType } from './context/ConfigContext';
 import { ModalProvider } from './components/Modal/Modal';
 
-const config: ConfigContextType = require(`./configs/config-${process.env.NEXT_PUBLIC_APP_NETWORK || 'mainnet'}.json`);
+
+const config: ConfigContextType = require(`./configs/config-${process.env.REACT_APP_NETWORK || 'mainnet'}.json`);
 
 function App() {
     return (

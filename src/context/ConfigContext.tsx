@@ -4,12 +4,14 @@ export type ConfigContextType = {
     nodeUrl: string;
     signerClientUrl: string;
     explorerUrl: string;
+    dataServicesUrl: string;
 };
 
 export const ConfigContext = createContext<ConfigContextType>({
     nodeUrl: '',
     signerClientUrl: '',
-    explorerUrl: ''
+    explorerUrl: '',
+    dataServicesUrl: ''
 });
 
 ConfigContext.displayName = 'ConfigContext';

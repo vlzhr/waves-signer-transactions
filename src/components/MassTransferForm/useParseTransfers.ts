@@ -48,8 +48,6 @@ const getRecipientHashByCSVParseResult = (data: string[][]): Record<string, stri
 export const useParseTransfers = (content: string, selectedAsset: MyMoney): { transfers: ITransferItem[] } => {
     const [transfers, setTransfers] = useState<ITransferItem[]>([]);
 
-
-
     useEffect(() => {
         if (!content || !selectedAsset) {
             return;

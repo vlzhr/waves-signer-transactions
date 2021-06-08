@@ -23,7 +23,7 @@ export const Main: React.FC<MainProps> = (props) => {
 
     const { userBalances } = useBalances(signer, userAddress);
 
-    console.log('%c userBalances', 'color: #e5b6ed', userBalances);
+    console.log('%c config', 'color: #e5b6ed', config);
 
     const onLogin = useCallback(async (provider: typeof ProviderWeb | typeof ProviderCloud) => {
         setOnSelectedSigner(false);

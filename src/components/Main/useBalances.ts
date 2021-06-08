@@ -1,14 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Signer } from '@waves/signer';
 import { MyMoney } from '@waves/balances/src/utils';
 import { Balance } from '@waves/balances';
+import { ConfigContext } from '../../context/ConfigContext';
 
 export const useBalances = (signer: Signer|null|undefined, userAddress: string) => {
     const [userBalances, setUserBalances] = useState<Record<string, MyMoney>>({});
+    const config = useContext(ConfigContext);
 
     useEffect(() => {
         if (userAddress) {
-            const balance = new Balance({ address: userAddress, updateBalancesMs: 5000 });
+            const balance = new Balance({
+                address: userAddress,
+                updateBalancesMs: 5000,
+                dataServicesUrl: 'https://waves.exchange/api/v1',
+                nodeUrl: config.nodeUrl,
+            });
 
             balance.onUpdate((balances) => {
                 console.log('%c balances', 'color: #e5b6ed', balances);
