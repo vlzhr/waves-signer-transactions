@@ -1,6 +1,6 @@
 # MassTransfer
 
-### Build astatic
+### Build
 
 ```
 npm install && npm run build
