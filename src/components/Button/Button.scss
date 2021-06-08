@@ -1,0 +1,20 @@
+.btn {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: solid 1px #5a81ea;
+    background-color: transparent;
+    color: #5a81ea;
+    cursor: pointer;
+    &.btn_primary {
+        color: #fff;
+        background-color: #5a81ea;
+    }
+    &.big {
+        width: 100%;
+    }
+}
