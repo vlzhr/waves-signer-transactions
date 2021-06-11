@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.d4b694c6.chunk.css",
-    "main.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.8af44730.chunk.js",
-    "main.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.8af44730.chunk.js.map",
+    "main.css": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.4fb8d133.chunk.css",
+    "main.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.1f3c12f6.chunk.js",
+    "main.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.1f3c12f6.chunk.js.map",
     "runtime-main.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/runtime-main.9a5257b1.js",
     "runtime-main.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/runtime-main.9a5257b1.js.map",
     "static/js/2.51dd3019.chunk.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/2.51dd3019.chunk.js",
     "static/js/2.51dd3019.chunk.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/2.51dd3019.chunk.js.map",
     "index.html": "https://vlzhr.github.io/waves-signer-transactions/index.html",
-    "static/css/main.d4b694c6.chunk.css.map": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.d4b694c6.chunk.css.map",
+    "static/css/main.4fb8d133.chunk.css.map": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.4fb8d133.chunk.css.map",
     "static/js/2.51dd3019.chunk.js.LICENSE.txt": "https://vlzhr.github.io/waves-signer-transactions/static/js/2.51dd3019.chunk.js.LICENSE.txt",
     "static/media/SearchAsset.scss": "https://vlzhr.github.io/waves-signer-transactions/static/media/input-search-icon.389948dd.svg",
     "static/media/LoginModal.scss": "https://vlzhr.github.io/waves-signer-transactions/static/media/storage_acc.4f1d4e1d.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.9a5257b1.js",
     "static/js/2.51dd3019.chunk.js",
-    "static/css/main.d4b694c6.chunk.css",
-    "static/js/main.8af44730.chunk.js"
+    "static/css/main.4fb8d133.chunk.css",
+    "static/js/main.1f3c12f6.chunk.js"
   ]
 }
