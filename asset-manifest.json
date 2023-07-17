@@ -1,23 +1,18 @@
 {
   "files": {
-    "main.css": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.4fb8d133.chunk.css",
-    "main.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.1f3c12f6.chunk.js",
-    "main.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.1f3c12f6.chunk.js.map",
-    "runtime-main.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/runtime-main.9a5257b1.js",
-    "runtime-main.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/runtime-main.9a5257b1.js.map",
-    "static/js/2.51dd3019.chunk.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/2.51dd3019.chunk.js",
-    "static/js/2.51dd3019.chunk.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/2.51dd3019.chunk.js.map",
+    "main.css": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.4efafd8b.css",
+    "main.js": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.5c0300af.js",
+    "static/media/roboto-medium6.woff2": "https://vlzhr.github.io/waves-signer-transactions/static/media/roboto-medium6.285682084687d85bcb4b.woff2",
+    "static/media/storage_acc.svg": "https://vlzhr.github.io/waves-signer-transactions/static/media/storage_acc.4f1d4e1ded260a6dc663.svg",
+    "static/media/email_acc.svg": "https://vlzhr.github.io/waves-signer-transactions/static/media/email_acc.70cabaad67593d87ce31.svg",
+    "static/media/arrow-dropdown.svg": "https://vlzhr.github.io/waves-signer-transactions/static/media/arrow-dropdown.2ea2229c6611cb903920.svg",
     "index.html": "https://vlzhr.github.io/waves-signer-transactions/index.html",
-    "static/css/main.4fb8d133.chunk.css.map": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.4fb8d133.chunk.css.map",
-    "static/js/2.51dd3019.chunk.js.LICENSE.txt": "https://vlzhr.github.io/waves-signer-transactions/static/js/2.51dd3019.chunk.js.LICENSE.txt",
-    "static/media/SearchAsset.scss": "https://vlzhr.github.io/waves-signer-transactions/static/media/input-search-icon.389948dd.svg",
-    "static/media/LoginModal.scss": "https://vlzhr.github.io/waves-signer-transactions/static/media/storage_acc.4f1d4e1d.svg",
-    "static/media/index.css": "https://vlzhr.github.io/waves-signer-transactions/static/media/roboto-medium6.28568208.woff2"
+    "static/media/input-search-icon.svg": "https://vlzhr.github.io/waves-signer-transactions/static/media/input-search-icon.389948dd7f899848e286.svg",
+    "main.4efafd8b.css.map": "https://vlzhr.github.io/waves-signer-transactions/static/css/main.4efafd8b.css.map",
+    "main.5c0300af.js.map": "https://vlzhr.github.io/waves-signer-transactions/static/js/main.5c0300af.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a5257b1.js",
-    "static/js/2.51dd3019.chunk.js",
-    "static/css/main.4fb8d133.chunk.css",
-    "static/js/main.1f3c12f6.chunk.js"
+    "static/css/main.4efafd8b.css",
+    "static/js/main.5c0300af.js"
   ]
 }
